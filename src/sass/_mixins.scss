@@ -1,0 +1,30 @@
+@mixin row-center($justify-content: center, $align-items: center){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin row-around($justify-content: space-around, $align-items: center){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin row-between($justify-content: space-between, $align-items: center){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin row-evenly($justify-content: space-evenly, $align-items: center){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin column-center($flex-direction: column,$justify-content: center, $align-items: center){
+    display: flex;
+    flex-direction:$flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
