@@ -19,21 +19,24 @@ main{
             font-size: 22px;
         }
 
-        #password{
+        #passwordContainer{
             background-color: #141436;
         }
+
+        input[type="checkbox"] {
+        	accent-color: #4CAF50;
+    	}
 
         #copy{
             background-color: #393A99;
         }
-
-        #bite{
-            height: 30px;
-            width: 30px;
-        }
         
         #generate{
             background-color: #393A99;
+        }
+
+        #inputNumber{
+            font-size: 13px;
         }
     }
 
