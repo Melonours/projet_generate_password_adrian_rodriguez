@@ -11,31 +11,31 @@
         <section>
             <div class="container-fluid h-50 p-4 text-white d-flex flex-column align-items-center gap-3" id="box">
                 <h1>Password Generator</h1>
-                <div class="container-fluid p-1 d-flex justify-content-between" id="password">
-                    <input class="bg-transparent border-0" type="text" readonly>
+                <div class="container-fluid p-1 d-flex justify-content-between" id="passwordContainer">
+                    <input class="bg-transparent border-0 text-white" type="text" id="password" readonly>
                     <button class="btn border border-0 rounded-0 text-white" id="copy">
                         <span><i class="fa-regular fa-clipboard"></i></span>
                     </button>
                 </div>
                 <div  class="container-fluid p-0 d-flex justify-content-between">
                     <span>Password length</span>
-                    <input class="border rounded-1" type="number" min="10" max="20">
+                    <input class="border rounded-1" id="inputNumber" type="number" min="10" max="20" value="10">
                 </div>
                 <div class="container-fluid p-0 d-flex justify-content-between">
                     <span>Include uppercase letters</span>
-                    <input class="checked" type="checkbox">
+                    <input id="checkUpper" type="checkbox">
                 </div>
                 <div class="container-fluid p-0 d-flex justify-content-between">
                     <span>Include lowercase letters</span>
-                    <input type="checkbox">
+                    <input id="checkLower" type="checkbox">
                 </div>
                 <div class="container-fluid p-0 d-flex justify-content-between">
                     <span>Include numbers</span>
-                    <input type="checkbox">
+                    <input id="checkNumber" type="checkbox">
                 </div>
                 <div class="container-fluid p-0 d-flex justify-content-between">
                     <span>Include symbols</span>
-                    <input type="checkbox">
+                    <input id="checkSymbol" type="checkbox">
                 </div>
                 <button class="btn w-100 border border-0 rounded-0  text-white" id="generate">Generate password</button>
             </div>

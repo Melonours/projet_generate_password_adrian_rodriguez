@@ -22451,16 +22451,18 @@ main #box {
 main #box h1, main #box .h1 {
   font-size: 22px;
 }
-main #box #password {
+main #box #passwordContainer {
   background-color: #141436;
+}
+main #box input[type=checkbox] {
+  accent-color: #4CAF50;
 }
 main #box #copy {
   background-color: #393A99;
 }
-main #box #bite {
-  height: 30px;
-  width: 30px;
-}
 main #box #generate {
   background-color: #393A99;
+}
+main #box #inputNumber {
+  font-size: 13px;
 }/*# sourceMappingURL=app.css.map */
