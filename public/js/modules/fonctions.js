@@ -4,9 +4,7 @@ function hello(){
     console.log("Bonjour kaurantun");
 }
 
-
-
-
+// ! Fonction pour générer le mot de passe
 function generate(){
     // console.log("salut depuis la fonction generate");
     let upperArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
