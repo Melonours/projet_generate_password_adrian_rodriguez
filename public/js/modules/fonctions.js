@@ -3,13 +3,8 @@ import { checkLower, checkNumber, checkSymbol, checkUpper, copyBtn, generateBtn,
 function hello(){
     console.log("Bonjour kaurantun");
 }
-// ! Fonction pour copier la valeur de l'input dans le clipboard
-// ! Vérifier les checkbox et selon si checked, lancer la génération du tableau avec les caractères
-// ! Fonction generate qui va lancer les verif des fonctions checked
-// ! Récupérer la valeur de l'input  number 
-// ! Evenement sur le bouton qui va lancer la fonction generate
 
-// ! fonction sur chaque tableau de caractères qui va randomiser la valeur sortie
+
 
 
 function generate(){
@@ -24,6 +19,7 @@ function generate(){
 
     // console.log(upperArray, lowerArray, numberArray,symbolArray);
 
+    // ! Fonction sur chaque tableau de caractères qui va randomiser la valeur sortie
     function shuffle(array){
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -38,7 +34,7 @@ function generate(){
 
     let passwordArray = []
 
-    
+    // ! Vérifier les checkbox et selon si checked, lancer la génération du tableau avec les caractères
     if(checkUpper.checked == true){
         passwordArray = passwordArray.concat(upperArray)
         console.log(passwordArray);
@@ -65,6 +61,7 @@ function generate(){
 
     let passwordStringTemp = passwordArray.toString()
 
+    // ! Récupérer la valeur de l'input  number 
     let inputValue = inputNumValue.value
 
     console.log(inputValue);
@@ -92,6 +89,9 @@ function generate(){
 }
 generateBtn.addEventListener("click", () => generate())
 
+
+
+// ! Fonction pour copier la valeur de l'input dans le clipboard
 function copyPassword(){
     // console.log("salut depuis la fonction copy");
     
